@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anna Eatery</title>
+
+  <!-- CLASSY FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f7f9fc;
+      color:#123c7b;
+      font-family:'Poppins',sans-serif;
+    }
+
+    /* HEADER */
+
+    header{
+      background:white;
+      border-bottom:4px solid #123c7b;
+      padding:20px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    /* LOGO */
+
+    .logo-container{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .logo img{
+      width:700px;
+      height:180px;
+      object-fit:contain;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      width:95%;
+      margin:auto;
+      padding:45px 0;
+    }
+
+    /* MENU TITLE */
+
+    .menu-title{
+      text-align:center;
+      color:#123c7b;
+      font-size:58px;
+      margin-bottom:50px;
+      font-family:'Cinzel',serif;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    /* MENU GRID */
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:28px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    /* MENU CARD */
+
+    .menu-card{
+      background:white;
+      border:2px solid #dbe4f3;
+      border-radius:18px;
+      padding:15px;
+      text-align:center;
+      transition:0.3s ease;
+      box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .menu-card:hover{
+      transform:translateY(-6px);
+      border-color:#123c7b;
+      box-shadow:0 10px 20px rgba(18,60,123,0.15);
+    }
+
+    /* IMAGE */
+
+    .menu-card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:14px;
+    }
+
+    /* CONTENT */
+
+    .menu-content{
+      padding-top:14px;
+    }
+
+    .menu-content h3{
+      color:#123c7b;
+      font-size:22px;
+      margin-bottom:6px;
+      text-transform:uppercase;
+      font-family:'Cinzel',serif;
+    }
+
+    .price{
+      color:#5c6f91;
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    /* CHATBOT */
+
+    .chatbot-container{
+      position:fixed;
+      right:25px;
+      bottom:60px;
+      width:320px;
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      border:3px solid #123c7b;
+      box-shadow:0 8px 24px rgba(18,60,123,0.2);
+      z-index:999;
+    }
+
+    /* CHAT HEADER */
+
+    .chat-header{
+      background:#123c7b;
+      color:white;
+      padding:16px;
+      font-size:22px;
+      font-weight:bold;
+      text-align:center;
+      letter-spacing:1px;
+      font-family:'Cinzel',serif;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#123c7b;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:60px;
+      font-size:16px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:650px){
+
+      .menu-grid{
+        grid-template-columns:1fr;
+      }
+
+      .chatbot-container{
+        position:relative;
+        width:100%;
+        right:0;
+        bottom:0;
+        margin-top:40px;
+      }
+
+      .logo img{
+        width:140px;
+        height:140px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo-container">
+
+      <div class="logo">
+
+        <img src="https://cdn.corenexis.com/files/c/3595159720.png" alt="Anna Eatery Logo">
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- MENU -->
+
+  <div class="container">
+
+    <h2 class="menu-title">Our Menu</h2>
+
+    <div class="menu-grid">
+
+      <!-- Pav Bhaji -->
+
+      <div class="menu-card">
+
+        <img src="https://static.vecteezy.com/system/resources/previews/004/957/509/non_2x/indian-mumbai-street-style-pav-bhaji-garnished-with-peas-raw-onions-coriander-and-butter-spicy-thick-curry-made-of-out-mixed-vegetables-served-with-pav-over-white-background-with-copy-space-photo.jpg" alt="Pav Bhaji">
+
+        <div class="menu-content">
+
+          <h3>Pav Bhaji</h3>
+
+          <div class="price">$6</div>
+
+        </div>
+
+      </div>
+
+      <!-- Chole Bhature -->
+
+      <div class="menu-card">
+
+        <img src="https://static.vecteezy.com/system/resources/previews/015/933/726/non_2x/chole-bhature-is-a-north-indian-food-dish-a-combination-of-chana-masala-and-bhatura-or-puri-free-photo.jpg" alt="Chole Bhature">
+
+        <div class="menu-content">
+
+          <h3>Chole Bhature</h3>
+
+          <div class="price">$7</div>
+
+        </div>
+
+      </div>
+
+      <!-- Pizza -->
+
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+
+        <div class="menu-content">
+
+          <h3>Pizza</h3>
+
+          <div class="price">$8</div>
+
+        </div>
+
+      </div>
+
+      <!-- Mango Lassi -->
+
+      <div class="menu-card">
+
+        <img src="https://tse3.mm.bing.net/th/id/OIP.5prfDZ79zY038H-LwOw8JQHaHa?r=0&pid=ImgDet&w=201&h=201&c=7&o=7&rm=3" alt="Mango Lassi">
+
+        <div class="menu-content">
+
+          <h3>Mango Lassi</h3>
+
+          <div class="price">$5</div>
+
+        </div>
+
+      </div>
+
+      <!-- Masala Dosa -->
+
+      <div class="menu-card">
+
+        <img src="https://img.freepik.com/premium-photo/masala-dosa-is-south-indian-meal-served-with-sambhar-coconut-chutney-selective-focus_466689-22958.jpg?w=2000" alt="Masala Dosa">
+
+        <div class="menu-content">
+
+          <h3>Masala Dosa</h3>
+
+          <div class="price">$6</div>
+
+        </div>
+
+      </div>
+
+      <!-- Biryani -->
+
+      <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1701579231349-d7459c40919d" alt="Biryani">
+
+        <div class="menu-content">
+
+          <h3>Biryani</h3>
+
+          <div class="price">$9</div>
+
+        </div>
+
+      </div>
+
+      <!-- Vada Pav -->
+
+      <div class="menu-card">
+
+        <img src="https://tse2.mm.bing.net/th/id/OIP.X7hG-jOnGCiZ4sNvOjZBiwHaGL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Vada Pav">
+
+        <div class="menu-content">
+
+          <h3>Vada Pav</h3>
+
+          <div class="price">$4</div>
+
+        </div>
+
+      </div>
+
+      <!-- Rava Dosa -->
+
+      <div class="menu-card">
+
+        <img src="https://tse3.mm.bing.net/th/id/OIP.lWY4ZvmyxyUW2J4geBn-3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Rava Dosa">
+
+        <div class="menu-content">
+
+          <h3>Rava Dosa</h3>
+
+          <div class="price">$7</div>
+
+        </div>
+
+      </div>
+
+      <!-- Samosa -->
+
+      <div class="menu-card">
+
+        <img src="https://i1.wp.com/vegecravings.com/wp-content/uploads/2017/03/samosa-recipe-step-by-step-instructions.jpg?fit=1801%2C1717&ssl=1" alt="Samosa">
+
+        <div class="menu-content">
+
+          <h3>Samosa</h3>
+
+          <div class="price">$5</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CHATBOT -->
+
+  <div class="chatbot-container">
+
+    <div class="chat-header">
+
+      🍴 ORDER HERE 🍕
+
+    </div>
+
+    <iframe 
+      allow="microphone;"
+      width="100%"
+      height="650"
+      style="border:none;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/e5b69eca-1542-4b0e-b407-ee097c213709">
+    </iframe>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Anna Eatery | Order Fresh Food Anytime
+
+  </footer>
+
+</body>
+</html>
